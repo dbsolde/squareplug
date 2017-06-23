@@ -1,6 +1,5 @@
 /**
 	plugin: Countdown Timer
-	version: 01
 	website: Squareplugs.com
 	description: Countdown timer for Squarespace
 */

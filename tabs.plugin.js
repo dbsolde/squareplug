@@ -20,9 +20,9 @@ function initTabs(a,v){
 
 function tabsFn(tab,version){
 	if(version==1){
-		tabCurrState(tab);
+		tabCurrState(tab,version);
 	}else{
-		tabCurrState(tab);
+		tabCurrState(tab,version);
 		$("ul li").click(function(e) {
 		  if ($(this).hasClass('slider')) {
 		    return;
@@ -36,12 +36,12 @@ function tabsFn(tab,version){
 	}
 }
 
-function tabCurrState(tab){
+function tabCurrState(tab,version){
 	var tab_class = $('ul.'+tab+' li');
 	tab_class.click(function(){
 		var tab_id = $(this).attr('data-tab');
 		tab_class.removeClass('current');
-		$('.tab-content').removeClass('current');
+		$('.tab-content'+version).removeClass('current');
 		$(this).addClass('current');
 	    $("#"+tab_id).addClass('current');
 	});

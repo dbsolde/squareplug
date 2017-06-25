@@ -21,7 +21,7 @@ function initAccordion(a) {
 function accordionFn(c) {
 	var allAccordions = $('.' + c + ' p.data');
 	var allAccordionItems = $('.' + c + ' .accordion-item');
-	$('.' + c + ' > .accordion-item').click(function () {
+	$('.' + c + ' > .item > .accordion-item').click(function () {
 		if ($(this).hasClass('open')) {
 			$(this).removeClass('open');
 			$(this).next().slideUp(400);

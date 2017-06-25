@@ -23,7 +23,7 @@ function tabsFn(tab,version){
 		tabCurrState(tab,version);
 	}else{
 		tabCurrState(tab,version);
-		$("ul li").click(function(e) {
+		$('ul.'+tab+' li').click(function(e) {
 		  if ($(this).hasClass('slider')) {
 		    return;
 		  }
@@ -40,9 +40,9 @@ function tabCurrState(tab,version){
 	var tab_class = $('ul.'+tab+' li');
 	tab_class.click(function(){
 		var tab_id = $(this).attr('data-tab');
-		tab_class.removeClass('current');
-		$('.tab-content'+version).removeClass('current');
-		$(this).addClass('current');
-	    $("#"+tab_id).addClass('current');
+		tab_class.removeClass('current'+version);
+		$('.tab-content'+version).removeClass('current'+version);
+		$(this).addClass('current'+version);
+	    $("#"+tab_id).addClass('current'+version);
 	});
 }

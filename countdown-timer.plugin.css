@@ -1,0 +1,50 @@
+/*
+  Countdown Timer
+*/
+@media only screen and (max-width: 768px) {
+    .timer-container {
+        justify-content: center;
+        -webkit-justify-content: center;
+    }
+    .timer-box {
+        margin: 10px !important;
+        padding-bottom: 15px;
+    }
+}
+.countdown-timer{
+      padding:20px 0;
+}
+.countdown-timer, .countdown-timer h1{
+    background: #E83956;
+    color: #ffffff !important;
+}
+.timer-container {    
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+}
+.timer-box {
+    width: 150px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 150px;
+    margin:5px;       
+    display: flex;
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.timer-box p {
+    margin: 0 !important;
+}

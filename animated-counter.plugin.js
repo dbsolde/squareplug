@@ -7,7 +7,7 @@
 
 function initAnimatedCounter(a) {
   void 0 === a ? console.error("Animated counter parameters is undefined.") : 
-	(animateCounterFn(a), $(window).on("popstate", function (i, t) {
+	(animateCounterFn(a), $(window).on("popstate", function (e) {
 		$("body").bind("DOMSubtreeModified", function () {
 			animateCounterFn(a), $(this).unbind("DOMSubtreeModified")
 		})

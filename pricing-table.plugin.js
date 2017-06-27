@@ -5,14 +5,14 @@
 	description: Pricing Table for Squarespace
 */
 function initPricingTable(a) {
-  void 0 === a ? console.error("Pricing table parameters is undefined.") : 
-	(pricingTableFn(a), $(window).on("popstate", function (e) {
-		$("body").bind("DOMSubtreeModified", function () {
-			pricingTableFn(a), $(this).unbind("DOMSubtreeModified")
+  void 0 === a ? console.error("Pricing table parameter is undefined.") : 
+	(pricingTableFn(a), $(window).on("popstate", function (e, a) {
+		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
+			pricingTableFn(a), $(this).off("DOMSubtreeModified")
 		})
 	}), $("body").on("click", "a", function () {
-		$("body").bind("DOMSubtreeModified", function () {
-			pricingTableFn(a), $(this).unbind("DOMSubtreeModified")
+		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
+			pricingTableFn(a), $(this).off("DOMSubtreeModified")
 		})
 	}))
 }

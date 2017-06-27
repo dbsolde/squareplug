@@ -1,0 +1,62 @@
+/*
+  tab slider 
+*/
+.slider-tab-container {
+	width: 100%;
+	margin: 0 auto;
+}
+ul.slider-tab {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	border-bottom: 1px solid #dddddd;
+	position: relative;
+}
+
+ul.slider-tab li {
+	color: #222;
+	display: inline-block;
+	padding: 15px 0px;
+	cursor: pointer;
+}
+
+ul.nav-slider-tab>li {
+	margin-bottom: -1px;
+}
+
+ul.slider-tab li.slider-tab-current {
+	color: #222;
+}
+
+.slider-tab-content {
+	display: none;
+	background: #FFFFFF;
+	margin-top: 20px;
+}
+
+ul.slider-tab li span {
+	padding: 15px 15px;
+}
+
+.slider-tab-content.slider-tab-current {
+	display: inherit;
+	-webkit-animation: fadeEffect 1s;
+	animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+@keyframes fadeEffect {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.tab-slider {
+	position: absolute;
+	bottom: -2px;
+	left: 0;
+	width: 70px;
+	border-bottom: 2px solid #000000;
+}

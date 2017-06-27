@@ -6,13 +6,13 @@
 */
 function initBackToTop(e) {
   void 0 === e ? console.error("Back to top parameter is undefined.") : 
-	(backToTopFn(e), $(window).on("popstate", function (e) {
-		$("body").bind("DOMSubtreeModified", function () {
-			backToTopFn(e), $(this).unbind("DOMSubtreeModified")
+	(backToTopFn(e), $(window).on("popstate", function (i, t) {
+		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
+			backToTopFn(e), $(this).off("DOMSubtreeModified")
 		})
-	}), $("body").on("click", "a", function () {
+	}), $("body div:last-child div:nth-child(3)").on("click", "a", function () {
 		$("body").bind("DOMSubtreeModified", function () {
-			backToTopFn(e), $(this).unbind("DOMSubtreeModified")
+			backToTopFn(e), $(this).off("DOMSubtreeModified")
 		})
 	}))
 }

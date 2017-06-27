@@ -5,15 +5,14 @@
 	description: Back to top for Squarespace
 */
 function initBackToTop(e) {
-  void 0 === e ? console.error("Back to top parameters is undefined.") : 
-	(backToTopFn(e), $(window).on("popstate", function (i, t) {
-		
-		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-			backToTopFn(e), $(this).off("DOMSubtreeModified")
+  void 0 === e ? console.error("Back to top parameter is undefined.") : 
+	(backToTopFn(e), $(window).on("popstate", function (e) {
+		$("body").bind("DOMSubtreeModified", function () {
+			backToTopFn(e), $(this).unbind("DOMSubtreeModified")
 		})
 	}), $("body").on("click", "a", function () {
-		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-			backToTopFn(e), $(this).off("DOMSubtreeModified")
+		$("body").bind("DOMSubtreeModified", function () {
+			backToTopFn(e), $(this).unbind("DOMSubtreeModified")
 		})
 	}))
 }

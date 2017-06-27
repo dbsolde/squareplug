@@ -6,13 +6,13 @@
 */
 function initPricingTable(a) {
   void 0 === a ? console.error("Pricing table parameters is undefined.") : 
-	(pricingTableFn(a), $(window).on("popstate", function (i, t) {
-		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-			pricingTableFn(a), $(this).off("DOMSubtreeModified")
+	(pricingTableFn(a), $(window).on("popstate", function (e) {
+		$("body").bind("DOMSubtreeModified", function () {
+			pricingTableFn(a), $(this).unbind("DOMSubtreeModified")
 		})
 	}), $("body").on("click", "a", function () {
-		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-			pricingTableFn(a), $(this).off("DOMSubtreeModified")
+		$("body").bind("DOMSubtreeModified", function () {
+			pricingTableFn(a), $(this).unbind("DOMSubtreeModified")
 		})
 	}))
 }

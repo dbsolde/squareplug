@@ -29,12 +29,10 @@ function tabsFn(tab){
 	});
 	var drawer_class = $(".tab-drawer-heading");
 	drawer_class.click(function () {
-		$(".tab-content").hide();
-		var d_activeTab = $(this).attr("data-tab");
-		$("#" + d_activeTab).fadeIn();
-		drawer_class.removeClass("active-accordion");
-		$(this).addClass("active-accordion");
-		$("ul.tabs li").removeClass("current");
-		$("ul.tabs li[data-tab^='" + d_activeTab + "']").addClass("current");
+		var tab_id = $(this).attr('data-tab');
+		tab_class.removeClass('current');
+		$('.tab-content').removeClass('current');
+		$(this).addClass('current');
+	    $("#"+tab_id).addClass('current');
 	});
 }

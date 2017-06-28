@@ -5,13 +5,7 @@
 	description: Back to top for Squarespace
 */
 function initBackToTop(e) {
-	void 0 === e ? console.error("Back to top parameters is undefined.") : (backToTopfn(e),
-	$(window).on("popstate", function(){
-		$("body").bind("DOMSubtreeModified",function(){
-			backToTopfn(e), $(this).unbind("DOMSubtreeModified")
-		})
-	}))
-}
+	$('.container').bind("DOMSubtreeModified", backToTopfn(e));
 
 function backToTopFn(value) {
 	if ($('#back-to-top').length) {

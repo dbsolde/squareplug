@@ -6,7 +6,7 @@
 */
 function initBackToTop(e) {
 	$('.container').bind("DOMSubtreeModified", backToTopfn(e));
-
+}
 function backToTopFn(value) {
 	if ($('#back-to-top').length) {
 		var scrollTrigger = value,

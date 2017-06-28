@@ -46,7 +46,7 @@ function sliderTab(tab) {
 	drawer_class.click(function () {
 	    var tab_id = $(this).attr('data-tab');
 	    tab_class.removeClass('slider-tab-current');
-	    $('.tab-content').removeClass('slider-tab-current');
+	    $('.slider-tab-content').removeClass('slider-tab-current');
 	    $(this).addClass('slider-tab-current');
 	    $("#"+tab_id).addClass('slider-tab-current');
 	});

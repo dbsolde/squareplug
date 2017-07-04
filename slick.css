@@ -137,15 +137,15 @@
 		padding-top: 5px !important;
 	}
     .slick-next:before{
-    	content: "\f105";
-        font-family: FontAwesome;
+    	content: "\f105" !important;
+        font-family: FontAwesome !important;
         text-decoration: inherit !important;
         color: #000000 !important;
         font-size: 18px !important;
     }
     .slick-prev:before{
-    	content: "\f104";
-        font-family: FontAwesome;
+    	content: "\f104" !important;
+        font-family: FontAwesome !important;
         text-decoration: inherit !important;
         color: #000000 !important;
         font-size: 18px !important;

@@ -19,7 +19,7 @@ function initLogoGallery(a, b) {
 }
 
 function initSlickSlider(slideShow, autoplay) {
-	$('.regular').slick({
+	$('.gallery').slick({
 		dots: true,
 		slidesToShow: 4,
 		slidesToScroll: slideShow,

@@ -1,45 +1,42 @@
 /* Slider */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.css');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 
 .slick-prev:before,
-    .slick-next:before {
-        color: gray !important;
-    }
-    .slick-prev{ left: -31px !important; }
-    .slick-next{ right: -32px !important; }
-    .slick-dots li.slick-active button:before{
-      color: #15AECC !important;
-    }
-    .slick-prev, .slick-next{
-      border: 1px solid #c0c0c0 !important;
-      width: 30px !important;
-      height: 25px !important;
-    }
-    .slick-dots li button:before{
-      font-size: 10px !important;
-    }
-	.fa{
-		padding-top: 5px !important;
-	}
-    .slick-next:before{
-    	content: "\f105" !important;
-        font-family: FontAwesome !important;
-        text-decoration: inherit !important;
-        color: #000000 !important;
-        font-size: 18px !important;
-    }
-    .slick-prev:before{
-    	content: "\f104" !important;
-        font-family: FontAwesome !important;
-        text-decoration: inherit !important;
-        color: #000000 !important;
-        font-size: 18px !important;
-    }
- @-webkit-keyframes fadeEffect {
-	    from { opacity: 0; }
-	    to { opacity: 1; }
-	}
-	@keyframes fadeEffect {
-	    from { opacity: 0; }
-	    to { opacity: 1; }
-	}
+.slick-next:before { color: gray; }
+.slick-prev { left: -31px; }
+.slick-next { right: -32px; }
+.slick-dots li.slick-active button:before { color: #15AECC; }
+.slick-prev,
+.slick-next {
+    border: 1px solid #c0c0c0;
+    width: 30px;
+    height: 25px;
+}
+.slick-dots li button:before {
+    font-size: 10px;
+}
+.fa { padding-top: 5px; }
+.slick-next:before {
+    content: "\f105";
+    font-family: FontAwesome;
+    text-decoration: inherit;
+    color: #000000;
+    font-size: 18px;
+}
+.slick-prev:before {
+    content: "\f104";
+    font-family: FontAwesome;
+    text-decoration: inherit;
+    color: #000000;
+    font-size: 18px;
+}
+@-webkit-keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeEffect { 
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

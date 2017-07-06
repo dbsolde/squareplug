@@ -19,6 +19,7 @@ function initLogoGallery(a, b) {
 }
 
 function initSlickSlider(slideShow, autoplay) {
+	$.getScript('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js', function () {
 	$('.gallery').slick({
 		dots: true,
 		slidesToShow: 4,
@@ -49,5 +50,6 @@ function initSlickSlider(slideShow, autoplay) {
 				}
 			}
 		]
+	});
 	});
 }

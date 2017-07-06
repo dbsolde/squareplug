@@ -17,12 +17,14 @@ function initCountdownTimer(t) {
 	}))
 }
 
-function initializeClock(time) {
-	var clock = document.getElementById('timer');
-	var daysSpan = clock.querySelector('h1.days') ? clock.querySelector('h1.days') : null;
-	var hoursSpan = clock.querySelector('h1.hours') ? clock.querySelector('h1.hours') : null;
-	var minutesSpan = clock.querySelector('h1.minutes') ? clock.querySelector('h1.minutes') : null;
-	var secondsSpan = clock.querySelector('h1.seconds') ? clock.querySelector('h1.seconds') : null;
+function initializeClock(time,id=timer) {
+	var clock = document.getElementById(id);
+	if(clock != null){
+		var daysSpan = clock.querySelector('h1.days');
+		var hoursSpan = clock.querySelector('h1.hours');
+		var minutesSpan = clock.querySelector('h1.minutes');
+		var secondsSpan = clock.querySelector('h1.seconds');
+	}
 	function updateClock() {
 		var t = getTimeRemaining(time);
 		daysSpan.innerHTML = t.days;

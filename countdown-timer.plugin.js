@@ -20,23 +20,27 @@ function initCountdownTimer(t) {
 function initializeClock(time) {
 	var id = "timer";
 	var clock = document.getElementById(id);
-	var daysTag = clock.querySelector('h1.days');
-	var hoursTag = clock.querySelector('h1.hours');
-	var minutesTag = clock.querySelector('h1.minutes');
-	var secondstag = clock.querySelector('h1.seconds');
-	updateClock(time);
-	var timeinterval = setInterval(updateClock, 1000);
-}
-function updateClock(time) {
+	if(clock != null){
+		var daysSpan = clock.querySelector('h1.days');
+		var hoursSpan = clock.querySelector('h1.hours');
+		var minutesSpan = clock.querySelector('h1.minutes');
+		var secondsSpan = clock.querySelector('h1.seconds');
+	
+	function updateClock() {
 		var t = getTimeRemaining(time);
-		daysTag.innerHTML = t.days;
-		hoursTag.innerHTML = ('0' + t.hours).slice(-2);
-		minutesTag.innerHTML = ('0' + t.minutes).slice(-2);
-		secondstag.innerHTML = ('0' + t.seconds).slice(-2);
+		daysSpan.innerHTML = t.days;
+		hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+		minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+		secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 		if (t.total <= 0) {
 			clearInterval(timeinterval);
 		}
+	}
+	updateClock();
+	var timeinterval = setInterval(updateClock, 1000);
+	}
 }
+
 function getTimeRemaining(time) {
 	var t = Date.parse(time) - Date.parse(new Date());
 	var seconds = Math.floor((t / 1000) % 60);

@@ -19,10 +19,10 @@ function initCountdownTimer(t) {
 
 function initializeClock(time) {
 	var clock = document.getElementById('timer');
-	var daysSpan = clock.querySelector('.days');
-	var hoursSpan = clock.querySelector('.hours');
-	var minutesSpan = clock.querySelector('.minutes');
-	var secondsSpan = clock.querySelector('.seconds');
+	var daysSpan = clock.querySelector('h1.days');
+	var hoursSpan = clock.querySelector('h1.hours');
+	var minutesSpan = clock.querySelector('h1.minutes');
+	var secondsSpan = clock.querySelector('h1.seconds');
 	function updateClock() {
 		var t = getTimeRemaining(time);
 		daysSpan.innerHTML = t.days;

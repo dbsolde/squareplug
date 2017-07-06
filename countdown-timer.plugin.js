@@ -6,18 +6,19 @@
 
 function initCountdownTimer(t) {
   void 0 === t ? console.error("Countdown timer parameters is undefined.") : 
-	(initializeClock(t,d), $(window).on("popstate", function (i, t) {
+	(initializeClock(t), $(window).on("popstate", function (i, t) {
 		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-			initializeClock(t,d), $(this).off("DOMSubtreeModified")
+			initializeClock(t), $(this).off("DOMSubtreeModified")
 		})
 	}), $("body").on("click", "a", function () {
 		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-			initializeClock(t,d), $(this).off("DOMSubtreeModified")
+			initializeClock(t), $(this).off("DOMSubtreeModified")
 		})
 	}))
 }
 
-function initializeClock(time,id=timer) {
+function initializeClock(time) {
+	var id = "timer";
 	var clock = document.getElementById(id);
 	if(clock != null){
 		var daysSpan = clock.querySelector('h1.days');

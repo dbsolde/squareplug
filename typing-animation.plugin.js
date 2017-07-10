@@ -19,12 +19,14 @@ function initTypingAnimation(strings) {
 }
 
 function typingAnimationFn(strings){
-    var splitStrings = strings.split(",");
-    var animateStrings = new Typed('#animate-strings', {
-        strings:  splitStrings,
-        backDelay: 1000, 
-        typeSpeed: 50,
-        backSpeed: 50,
-        loop: true
+    $.getScript('https://cdn.rawgit.com/mattboldt/typed.js/75c41293/lib/typed.min.js', function () {
+        var splitStrings = strings.split(",");
+        var animateStrings = new Typed('#animate-strings', {
+            strings:  splitStrings,
+            backDelay: 1000, 
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
     });
 }

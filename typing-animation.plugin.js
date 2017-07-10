@@ -24,7 +24,7 @@ function typingAnimationFn(strings){
         strings:  splitStrings,
         backDelay: 1000, 
         typeSpeed: 50,
-        backSpeed: 100,
+        backSpeed: 50,
         loop: true
     });
 }

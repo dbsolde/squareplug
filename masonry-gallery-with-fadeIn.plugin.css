@@ -1,0 +1,161 @@
+.sqs-block-gallery {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid {
+  padding: 1% !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid {
+  column-gap: 1em !important;
+  -webkit-column-gap: 1em !important;
+  -moz-column-gap: 1em !important;
+  -ms-column-gap: 1em !important;
+  -o-column-gap: 1em !important;
+  margin: 0 !important;
+  padding: 1% 2% !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide {
+  clear: none !important;
+  display: inline-table !important;
+  float: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper {
+  margin: 0 !important;
+  margin-bottom: -10px !important;
+  float: left !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-anchor {
+  padding-bottom: 0.3% !important;
+  float: left !important;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-anchor img {
+  float: left !important;
+  left: 0 !important;
+  width: 100.1% !important;
+  height: auto !important;
+  z-index: 9;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title {
+  margin: 0 !important;
+  width: 100.1% !important;
+  height: 100% !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title top,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title middle,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title bottom {
+  color: #fff !important;
+  float: left !important;
+  position: relative !important;
+  width: 100% !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title top {
+  top: 15% !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title middle {
+  top: 35% !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title middle {
+    top: auto !important;
+  }
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title bottom {
+  /*top: 70% !important;*/
+  position: absolute !important;
+  top: auto !important;
+  left: 0 !important;
+  bottom: 15% !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title top bghover,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title middle bghover,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title bottom bghover {
+  visibility: hidden !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title top #label1,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title middle #label1,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title bottom #label1 {
+  font-size: 25px !important;
+  font-family: Sans-serif !important;
+  position: relative !important;
+  top: 15px;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title top #label1 u,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title middle #label1 u,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title bottom #label1 u {
+  border-bottom: 1px solid #fff !important;
+  text-decoration: none !important;
+}
+
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title top #label2,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title middle #label2,
+.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title bottom #label2 {
+  font-size: 13px !important;
+  font-weight: bold !important;
+  position: relative !important;
+  top: -15px;
+}
+
+.sqs-gallery-design-grid-slide {
+  opacity: 0;
+}
+
+.slide.sqs-gallery-design-grid-slide.fadeIn {
+  opacity: 1;
+}
+
+.fadeIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+  50% {
+    opacity: 1;
+  }
+}

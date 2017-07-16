@@ -21,6 +21,14 @@ $( window ).scroll(function() {
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
                 $(this).addClass('fadeIn');
+                $('.fadeIn').css({
+                      '-webkit-animation-name': 'zoomIn',
+                      'animation-name': 'zoomIn',
+                      '-webkit-animation-duration': '1s',
+                      'animation-duration': '1s',
+                      '-webkit-animation-fill-mode': 'both',
+                      'animation-fill-mode': 'both'
+                });
             }
         });
  });

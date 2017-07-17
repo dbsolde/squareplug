@@ -29,12 +29,15 @@ $( window ).scroll(function() {
                 $('.fadeIn').css({
                       '-webkit-animation-name': 'zoomIn',
                       'animation-name': 'zoomIn',
-                      '-webkit-animation-duration': '1s',
-                      'animation-duration': '1s',
+                      '-webkit-animation-duration': '0.4s',
+                      'animation-duration': '0.4s',
+                      '-webkit-animation-delay': '0.2s',
+                      'animation-delay': '0.2s',
                       '-webkit-animation-fill-mode': 'both',
                       'animation-fill-mode': 'both'
                 });
                 $(this).on('mouseover', function (){
+                    
                     if($(this).hasClass('fadeIn')){
                         imageSlideTitle.css('z-index', 99);
                         anchor.css('z-index', 999);

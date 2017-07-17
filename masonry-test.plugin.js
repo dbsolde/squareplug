@@ -42,7 +42,7 @@ $( window ).scroll(function() {
                         imageSlideTitle.css('z-index', 99);
                         anchor.css('z-index', 999);
                         img.css({
-                            'background-color': 'rgba(255, 255, 255, 0.9)',
+                            'opacity': '0.5',
                             'transition': 'opacity 0.2s ease-out',
                             'z-index': 999
                         });

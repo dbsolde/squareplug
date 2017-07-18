@@ -23,7 +23,7 @@ $( window ).scroll(function() {
                 imageSlideTitle = marginWrapper.children('.image-slide-title'),
                 divAnimate = imageSlideTitle.children('div'),
                 animateTitle = divAnimate.children('.title'),
-                animateLists = divAnimate.children('ul li'),
+                animateLists = divAnimate.children('ul'),
                 bottom_of_object = $(this).offset().top + $(this).outerHeight(),
                 bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){

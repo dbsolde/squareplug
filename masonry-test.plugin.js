@@ -17,13 +17,15 @@ function initMasonryFadeIn() {
 function fadeIdOnScroll(){
 $( window ).scroll(function() {
         $('.sqs-gallery-design-grid-slide').each( function(i){
-            var marginWrapper = $(this).children('.margin-wrapper');
-            var anchor = marginWrapper.children('.image-slide-anchor');
-            var img = anchor.children('.thumb-image');
-            var imageSlideTitle = marginWrapper.children('.image-slide-title');
-            
-            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var marginWrapper = $(this).children('.margin-wrapper'),
+                anchor = marginWrapper.children('.image-slide-anchor'),
+                img = anchor.children('.thumb-image'),
+                imageSlideTitle = marginWrapper.children('.image-slide-title'),
+                divAnimate = imageSlideTitle.children('div'),
+                animateTitle = divAnimate.children('.title'),
+                animateLists = divAnimate.children('ul li'),
+                bottom_of_object = $(this).offset().top + $(this).outerHeight(),
+                bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
                 $(this).addClass('fadeIn');
                 $('.fadeIn').css({
@@ -46,6 +48,12 @@ $( window ).scroll(function() {
                             'transition': 'opacity 0.2s ease-out',
                             'z-index': 999
                         });
+                        animateTitle.css({
+                            'transition': 'opacity 0.1s ease-in'
+                        });
+                        animateLists.css({
+                            'transition': 'opacity 0.1s ease-in'
+                        });
                     }
                 }).on('mouseout', function() {
                     if($(this).hasClass('fadeIn')){
@@ -53,6 +61,12 @@ $( window ).scroll(function() {
                         img.css({
                             'opacity': 1,
                             'transition': 'opacity 0.1s ease-in'
+                        });
+                        animateTitle.css({
+                            'transition': 'opacity 0.3s ease-out'
+                        });
+                        animateLists.css({
+                            'transition': 'opacity 0.3s ease-out'
                         });
                     }      
                 });

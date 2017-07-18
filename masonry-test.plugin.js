@@ -53,7 +53,8 @@ $( window ).scroll(function() {
 			animateTitle.css({
 			    'transition': 'margin-right 0.1s ease-in',
 			    '-webkit-transition': 'margin-right 0.1s ease-in',
-			    'margin-right': '20px'
+			    'margin-right': '20px',
+			    'text-align': 'right'
 			}).fadeTo("slow", 1);
 			    
                         animateLists.css({
@@ -75,7 +76,8 @@ $( window ).scroll(function() {
 			animateTitle.css({
 			    'transition': 'margin-right 0.1s ease-out',
 			    '-webkit-transition': 'margin-right 0.1s ease-out',
-			    'margin-right': '0px'
+			    'margin-right': '0px',
+			    'text-align': 'right'
 			}).fadeTo("slow", 1);
 			    
                         animateLists.css({

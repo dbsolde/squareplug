@@ -51,6 +51,13 @@ $( window ).scroll(function() {
                         animateTitle.css({
                             'transition': 'opacity 0.1s ease-in'
                         });
+                      
+                        animateTitle.css({
+							"transition": "margin-right 0.3s ease-in",
+							"-webkit-transition": "margin-right 0.3s ease-in",
+							"margin-right": "0"
+						}).fadeTo("slow", 1);
+                        
                         animateLists.css({
                             'transition': 'opacity 0.1s ease-in'
                         });

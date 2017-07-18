@@ -66,7 +66,7 @@ $( window ).scroll(function() {
                             'transition': 'opacity 0.1s ease-in'
                         });
                 
-			animateTitle.animate({ "right": "0" }, "slow" );
+			animateTitle.animate({ "right": "0px" }, "slow" );
 			    
                         animateLists.css({
 				"transition": "margin-right 0.2s ease-out",

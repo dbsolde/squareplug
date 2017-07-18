@@ -50,14 +50,17 @@ $( window ).scroll(function() {
                         });
                         
                         animateTitle.css({
-				"transition": "margin-right 0.3s ease-in",
-				"-webkit-transition": "margin-right 0.3s ease-in",
+				"transition": "margin-right 0.2s ease-in",
+				"-webkit-transition": "margin-right 0.2s ease-in",
 				"margin-right": "20px"
 			}).fadeTo("slow", 1);
-                        
+			    
                         animateLists.css({
-                            'transition': 'opacity 0.1s ease-in'
-                        });
+				"transition": "margin-right 0.2s ease-in",
+				"-webkit-transition": "margin-right 0.2s ease-in",
+				"margin-right": "20px"
+			}).fadeTo("slow", 1);
+			    
                     }
                 }).on('mouseout', function() {
                     if($(this).hasClass('fadeIn')){
@@ -68,14 +71,16 @@ $( window ).scroll(function() {
                         });
                 
 			animateTitle.css({
-				"transition": "margin-right 0.3s ease-out",
-				"-webkit-transition": "margin-right 0.3s ease-out",
-				"margin-right": "20px"
+				"transition": "margin-right 0.2s ease-out",
+				"-webkit-transition": "margin-right 0.2s ease-out",
+				"margin-right": "0px"
 			}).fadeTo("slow", 1);
 			    
                         animateLists.css({
-                            'transition': 'opacity 0.3s ease-out'
-                        });
+				"transition": "margin-right 0.2s ease-out",
+				"-webkit-transition": "margin-right 0.2s ease-out",
+				"margin-right": "0px"
+			}).fadeTo("slow", 1);
                     }      
                 });
             }

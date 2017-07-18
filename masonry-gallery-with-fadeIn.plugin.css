@@ -69,13 +69,6 @@
   opacity: 1;
 }
 
-.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title div{
-  opacity: 0;
-}
-
-.sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .fadeIn .margin-wrapper .image-slide-title div{
-  opacity:1;  
-}
 @-webkit-keyframes zoomIn {
   0% {
     opacity: 0;

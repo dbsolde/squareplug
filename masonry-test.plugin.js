@@ -50,8 +50,8 @@ $( window ).scroll(function() {
                         });
                         
                         animateTitle.css({
-				"transition": "margin-right 0.2s ease-in",
-				"-webkit-transition": "margin-right 0.2s ease-in",
+				"transition": "margin-right 0.1s ease-in",
+				"-webkit-transition": "margin-right 0.1s ease-in",
 				"margin-right": "20px"
 			}).fadeTo("slow", 1);
 			    
@@ -71,8 +71,8 @@ $( window ).scroll(function() {
                         });
                 
 			animateTitle.css({
-				"transition": "margin-right 0.2s ease-out",
-				"-webkit-transition": "margin-right 0.2s ease-out",
+				"transition": "margin-right 0.1s ease-out",
+				"-webkit-transition": "margin-right 0.1s ease-out",
 				"margin-right": "0px"
 			}).fadeTo("slow", 1);
 			    

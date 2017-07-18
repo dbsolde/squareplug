@@ -48,9 +48,9 @@ $( window ).scroll(function() {
                             'transition': 'opacity 0.2s ease-out',
                             'z-index': 999
                         });
-                        animateTitle.animate({ "right": "20px" }, "slow" );
-                       
 			    
+                        animateTitle.animate({ "right": "+=20px" }, "slow" );
+                      
                         animateLists.css({
 				"transition": "margin-right 0.2s ease-in",
 				"-webkit-transition": "margin-right 0.2s ease-in",

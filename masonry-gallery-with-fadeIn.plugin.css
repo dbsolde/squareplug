@@ -92,8 +92,8 @@
 }
 .sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title  div {
 	float:right;
-  margin-top:30px;
-  margin-right:20px;
+        margin-top:30px;
+  	
 }
 .sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title  div h3{
 	font-size:25px;
@@ -102,7 +102,7 @@
 }
 .sqs-block-gallery .sqs-gallery-block-grid .sqs-gallery-design-grid .sqs-gallery-design-grid-slide .margin-wrapper .image-slide-title  div ul{
     float: right;
-	list-style-type: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;  

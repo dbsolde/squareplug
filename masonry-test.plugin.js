@@ -48,15 +48,12 @@ $( window ).scroll(function() {
                             'transition': 'opacity 0.2s ease-out',
                             'z-index': 999
                         });
+                        
                         animateTitle.css({
-                            'transition': 'opacity 0.1s ease-in'
-                        });
-                      
-                        animateTitle.css({
-							"transition": "margin-right 0.3s ease-in",
-							"-webkit-transition": "margin-right 0.3s ease-in",
-							"margin-right": "0"
-						}).fadeTo("slow", 1);
+				"transition": "margin-right 0.3s ease-in",
+				"-webkit-transition": "margin-right 0.3s ease-in",
+				"margin-right": "20px"
+			}).fadeTo("slow", 1);
                         
                         animateLists.css({
                             'transition': 'opacity 0.1s ease-in'
@@ -69,9 +66,13 @@ $( window ).scroll(function() {
                             'opacity': 1,
                             'transition': 'opacity 0.1s ease-in'
                         });
-                        animateTitle.css({
-                            'transition': 'opacity 0.3s ease-out'
-                        });
+                
+			animateTitle.css({
+				"transition": "margin-right 0.3s ease-out",
+				"-webkit-transition": "margin-right 0.3s ease-out",
+				"margin-right": "20px"
+			}).fadeTo("slow", 1);
+			    
                         animateLists.css({
                             'transition': 'opacity 0.3s ease-out'
                         });

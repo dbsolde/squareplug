@@ -7,7 +7,7 @@
 */
 
 
-function setParticlesAnimation(e, a) {
+function setParticlesAnimation(e, a, visibleTo) {
 	void 0 === e.particles ? console.error("Particles Animation Parameters is undefined.") : (callParticlesAnimation(e, a, visibleTo), $(window).on("popstate", function (i, n) {
 		$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
 			callParticlesAnimation(e, a, visibleTo), $(this).off("DOMSubtreeModified")
@@ -20,7 +20,7 @@ function setParticlesAnimation(e, a) {
 }
 
 function callParticlesAnimation(e, a, visibleTo) {
-	if(visibleTo){ var showParticleAnimationDiv = '".'+visibleTo +'"'; }else{ var showParticleAnimationDiv = "body"; }
+	if(visibleTo){ var showParticleAnimationDiv = '"'+visibleTo +'"'; }else{ var showParticleAnimationDiv = "body"; }
   	// browser check
 	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
 	var is_safari = navigator.userAgent.indexOf("Safari") > -1;	

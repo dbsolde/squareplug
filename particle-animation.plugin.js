@@ -20,7 +20,7 @@ function setParticlesAnimation(e, a, visibleTo) {
 }
 
 function callParticlesAnimation(e, a, visibleTo) {
-	if(visibleTo){ var showParticleAnimationDiv = '"'+visibleTo +'"'; }else{ var showParticleAnimationDiv = "body"; }
+	if(visibleTo){ var showParticleAnimationDiv = '".'+ visibleTo +'"'; }else{ var showParticleAnimationDiv = "body"; }
   	// browser check
 	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
 	var is_safari = navigator.userAgent.indexOf("Safari") > -1;	

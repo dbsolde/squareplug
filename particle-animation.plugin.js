@@ -20,7 +20,8 @@ function setParticlesAnimation(e, a, visibleTo) {
 }
 
 function callParticlesAnimation(e, a, visibleTo) {
-	if(visibleTo){ var showParticleAnimationDiv = '".'+ visibleTo +'"'; }else{ var showParticleAnimationDiv = "body"; }
+	var showParticleAnimationDiv="";
+	if(visibleTo){ var showParticleAnimationDiv = $("."+visibleTo); }else{ var showParticleAnimationDiv = $("body"); }
   	// browser check
 	var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
 	var is_safari = navigator.userAgent.indexOf("Safari") > -1;	
@@ -30,7 +31,7 @@ function callParticlesAnimation(e, a, visibleTo) {
 	if (!i || is_safari) {
 		var n = window.location.pathname,
 			t = '<div id="ajax-content-wrap" style="position: relative; left: 0; top: 0; z-index: 0;width: 100%; height: 100%;"><div class="blurred-wrap"><div class="nectar-box-roll"><div class="fullscreen-header" data-alignment="center" data-alignment-v="bottom" data-animate-in-effect="none" data-bg-pos="center" data-height="0" data-midnight="light" data-parallax="0" data-text-effect="rotate_in" id="page-header-bg" style="height: 0;"><div class="scroll-down-wrap hidden"><a class="section-down-arrow" style="cursor: pointer; outline: none"><i class="fa fa-angle-down"></i></a></div><div class="nectar-particles" data-disable-explosion="off" data-rotation-timing="5000"><div class="canvas-bg"><canvas data-active-index="0" id="particlesCanvas"></canvas></div><div class="overlaid-content" data-alignment="center" data-alignment-v="bottom" data-text-effect="rotate_in"><div class="container"><div class="row" style="top: 0px; visibility: visible;"><div class="col span_6"></div></div></div><div class="pagination-navigation"><div class="pagination-dots"></div></div><svg version="1.1" width="690" xmlns="http://www.w3.org/2000/svg"><defs><filter id="goo"><fegaussianblur in="SourceGraphic" result="blur" stddeviation="10"></fegaussianblur><fecolormatrix in="blur" mode="matrix" result="goo" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 69 -16"></fecolormatrix><fecomposite in="SourceGraphic" in2="goo" operator="atop"></fecomposite></filter></defs></svg></div></div></div></div></div></div>';
-		if (0 === $("#ajax-content-wrap").length && $(showParticleAnimationDiv).prepend(t), 0 !== $("#ajax-content-wrap").length) {
+		if (0 === $("#ajax-content-wrap").length && showParticleAnimationDiv.prepend(t), 0 !== $("#ajax-content-wrap").length) {
 			$("#ajax-content-wrap").show();
 			var o = "";
 			$(e.particles).each(function (a, i) {

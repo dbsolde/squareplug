@@ -29,5 +29,6 @@ function typingAnimationFn(strings){
             loop: true
         };
         var animateStrings = new Typed('#animate-strings', options);
+        return animateStrings;
     });
 }

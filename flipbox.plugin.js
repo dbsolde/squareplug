@@ -19,21 +19,23 @@ function setFlipbox(e) {
 }
 
 function callFlipbox(e) {
-	$(e).each(function (e, i) {
-		$(".menu").each(function (e, t) {
-			var n = $(this).attr("class").split(" ")[1];
-			if ($(this).hasClass(n) && -1 != n.indexOf(i)) {
-				$("." + n + " .menu-section").parent().parent().parent().parent().parent().removeClass("sqs-block");
-				var s = $("." + n + " .menu-section").children().children();
-				s.attr("style") || (s.flip({
-					axis: "y",
-					trigger: "hover",
-					reverse: !0,
-					speed: 0
-				}), setFlipboxStyle(i))
-			}
-		})
-	})
+	$.getScript('https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js', function () {
+		$(e).each(function (e, i) {
+			$(".menu").each(function (e, t) {
+				var n = $(this).attr("class").split(" ")[1];
+				if ($(this).hasClass(n) && -1 != n.indexOf(i)) {
+					$("." + n + " .menu-section").parent().parent().parent().parent().parent().removeClass("sqs-block");
+					var s = $("." + n + " .menu-section").children().children();
+					s.attr("style") || (s.flip({
+						axis: "y",
+						trigger: "hover",
+						reverse: !0,
+						speed: 0
+					}), setFlipboxStyle(i))
+				}
+			})
+		});
+	});
 }
 
 function setFlipboxStyle(e) {

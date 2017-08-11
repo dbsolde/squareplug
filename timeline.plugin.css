@@ -5,7 +5,7 @@
 }
 
 .timeline:before {
-  top: 0;
+  top: 20px;
   bottom: 0;
   position: absolute;
   content: " ";

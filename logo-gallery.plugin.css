@@ -89,20 +89,6 @@ img {
 	padding-top: 7px;
 }
 
-/* slick */
-/* change to square thing */
-.slick-dots li button:before {
-	font-size: 20px;
-	color: black;
-	width: 30px;
-	height: 30px;
-	content: "■";
-}
-.slick-dots li.slick-active button:before { 
-	font-size: 40px;
-    margin-top: -7px;
-}
-/* end for modification */
 .slick-initialized .slick-slide{
 	margin-top:-20px;
 	margin-bottom: -24px;

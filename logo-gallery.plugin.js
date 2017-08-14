@@ -7,29 +7,29 @@
 
 function initLogoGallery(a, b) {
 	void 0 === a ? console.error("Logo gallery parameters is undefined.") :
-		(initSlickSlider(a, b), $(window).on("popstate", function (i, t) {
+		(initSlickSlider(a, b, c), $(window).on("popstate", function (i, t) {
 			$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-				initSlickSlider(a, b), $(this).off("DOMSubtreeModified")
+				initSlickSlider(a, b, c), $(this).off("DOMSubtreeModified")
 			})
 		}), $("body").on("click", "a", function () {
 			$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-				initSlickSlider(a, b), $(this).off("DOMSubtreeModified")
+				initSlickSlider(a, b, c), $(this).off("DOMSubtreeModified")
 			})
 		}))
 }
 
-function initSlickSlider(slideShow, autoplay) {
+function initSlickSlider(showImage ,slideShow, autoplay) {
 	$.getScript('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js', function () {
 	$('.gallery').slick({
 		dots: true,
-		slidesToShow: 4,
+		slidesToShow: showImage,
 		slidesToScroll: slideShow,
 		autoplay: autoplay,
 		infinite: true,
 		responsive: [{
 				breakpoint: 1024,
 				settings: {
-				slidesToShow: 3,
+				slidesToShow: showImage,
 				slidesToScroll: slideShow,
 				infinite: true,
 				dots: true
@@ -38,7 +38,7 @@ function initSlickSlider(slideShow, autoplay) {
 			{
 				breakpoint: 600,
 				settings: {
-				slidesToShow: 2,
+				slidesToShow: showImage,
 				slidesToScroll: slideShow
 				}
 			},

@@ -40,7 +40,7 @@ $.getScript('https://kenwheeler.github.io/slick/slick/slick.js', function () {
           {
             breakpoint: 600,
             settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: NextImage
             }
           },

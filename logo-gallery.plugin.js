@@ -5,7 +5,7 @@
 	description: Logo Gallery for Squarespace
 */
 
-function initLogoGallery(a, b) {
+function initLogoGallery(a, b, c) {
 	void 0 === a ? console.error("Logo gallery parameters is undefined.") :
 		(initSlickSlider(a, b, c), $(window).on("popstate", function (i, t) {
 			$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {

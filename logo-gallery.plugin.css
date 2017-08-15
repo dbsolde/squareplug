@@ -53,6 +53,8 @@
 
 .link-style {
 	border-radius: 50%;
+	width: 30px;
+	height: 30px;
 	opacity: .7;
 	-webkit-animation: fadeEffect 2s;
 	animation: fadeEffect 2s;

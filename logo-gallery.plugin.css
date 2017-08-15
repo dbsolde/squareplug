@@ -10,8 +10,6 @@
 }
 
 .slick-slide {
-	margin: 0px 5px;
-	height: 150px;
 	position: relative;
 }
 
@@ -26,7 +24,7 @@
 	width: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(1, 1, 1, .35);
+	
 	transition: 0.2s;
 	opacity: 0;
 }
@@ -40,15 +38,11 @@
 }
 
 .overlay-content {
-	color: white;
-	font-size: 20px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
-	width: 100%;
-	text-align: center;
 }
 
 .border-content {
@@ -58,11 +52,7 @@
 }
 
 .link-style {
-	background: red;
-	width: 30px;
-	height: 30px;
 	border-radius: 50%;
-	margin: 0px auto 0px;
 	opacity: .7;
 	-webkit-animation: fadeEffect 2s;
 	animation: fadeEffect 2s;

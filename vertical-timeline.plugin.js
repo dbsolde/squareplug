@@ -4,23 +4,8 @@
 * @website: Squareplugs.com
 * @description: Vertical Timeline Plugin for Squarespace
 */
-function initVerticalTimeline() {
-	fadeOnScrollTimeline();
-	$(window).on("popstate", function (event, state) {
-		$('body div:last-child div:nth-child(3)').bind("DOMSubtreeModified", function () {
-			fadeOnScrollTimeline();
-			$(this).off("DOMSubtreeModified");
-		});
-	});
-	$('body').on('click', 'a', function () {
-		$('body div:last-child div:nth-child(3)').bind("DOMSubtreeModified", function () {
-			fadeOnScrollTimeline();
-			$(this).off("DOMSubtreeModified");
-		});
-	});
-}
 
-function fadeOnScrollTimeline() {
+jQuery(function() {
 	new Waypoint.Inview({
 		element: $('.tl:odd')[0],
 		enter: function (direction) {
@@ -60,4 +45,4 @@ function fadeOnScrollTimeline() {
 			$('.tl-4').removeClass('rotateInDownRight');
 		}
 	});
-}
+});

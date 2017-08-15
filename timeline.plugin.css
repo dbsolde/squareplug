@@ -13,8 +13,6 @@
   bottom: 0;
   position: absolute;
   content: " ";
-  width: 3px;
-  background-color: #d4d4d4;
   left: 50%;
   margin-left: -1.5px;
 }

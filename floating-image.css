@@ -38,8 +38,16 @@
   box-shadow: 0 30px 20px rgba(35,32,39,0.5);
 }
 .caption {
-  position: absolute;
-  width: 100%;
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .caption p { margin-top:-15px;}
 .container {

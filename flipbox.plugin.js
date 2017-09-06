@@ -85,6 +85,8 @@ function setFlipboxStyle(e) {
 	}), a.css({
 		"margin-top": "0",
 		"margin-right": "0"
+	}), n.a.css({
+		"display":"block"
 	});
 	var r = navigator.userAgent.toLowerCase(); - 1 !== r.indexOf("safari") && -1 !== r.indexOf("8.0") && -1 === r.indexOf("chrome") && a.css({
 		"z-index": "1"

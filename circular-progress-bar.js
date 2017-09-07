@@ -5,7 +5,7 @@
 * @description: Progress Bar Plugin for Squarespace
 * @author: Zeddicus Zu'l Zorander <jimenez.phillip.felicidario@gmail.com>
 */
-document.write('<script type="text/javascript" src="https://cdn.rawgit.com/dbsolde/squareplug/767a7326/jquery.easypiechart.min.js"></script>');
+document.writeln('<script type="text/javascript" src="https://cdn.rawgit.com/dbsolde/squareplug/767a7326/jquery.easypiechart.min.js"></script>');
 eval(function (p, a, c, k, e, d) {
 	e = function (c) {
 		return (c < a ? '' : e(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36))

@@ -19,10 +19,9 @@ function initTypingAnimation(strings) {
 }
 
 function typingAnimationFn(strings){
-    $.getScript('https://cdn.rawgit.com/mattboldt/typed.js/75c41293/lib/typed.min.js', function () {
-        var splitStrings = strings.split(",");
+    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js', function () {
         var options = {
-            strings:  splitStrings,
+            strings:  strings,
             backDelay: 1000, 
             typeSpeed: 50,
             backSpeed: 50,

@@ -19,7 +19,7 @@ function initTypingAnimation(strings) {
 }
 
 function typingAnimationFn(strings){
-    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js', function () {
+    $.getScript('https://cdn.rawgit.com/mattboldt/typed.js/75c41293/lib/typed.min.js', function () {
         var splitStrings = strings.split(",");
         var options = {
             strings:  splitStrings,

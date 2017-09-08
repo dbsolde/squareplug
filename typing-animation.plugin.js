@@ -21,11 +21,11 @@ function initTypingAnimation(strings) {
 function typingAnimationFn(strings){
     $.getScript('https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js', function () {       
         $('#animate-strings').typed({
-			strings: strings,
-			typeSpeed: 50,
-			backDelay: 3000,
-            backSpeed: 50,
-            loop: true
-		});
+		strings: strings,
+		typeSpeed: 50,
+		backDelay: 1000,
+            	backSpeed: 50,
+            	loop: true
+	});
     });
 }

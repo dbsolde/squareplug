@@ -19,15 +19,13 @@ function initTypingAnimation(strings) {
 }
 
 function typingAnimationFn(strings){
-    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js', function () {
-        var options = {
-            strings:  strings,
-            backDelay: 1000, 
-            typeSpeed: 50,
+    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js', function () {       
+        $('#animate-strings').typed({
+			strings: strings,
+			typeSpeed: 50,
+			backDelay: 3000,
             backSpeed: 50,
             loop: true
-        };
-        var animateStrings = new Typed('#animate-strings', options);
-        return animateStrings;
+		});
     });
 }

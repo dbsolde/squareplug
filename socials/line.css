@@ -1,0 +1,123 @@
+/* Wrapper */
+.icon-button {
+	background-color: white;
+	cursor: pointer;
+	display: inline-block;
+	height: 2rem;
+	line-height: 2rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 2rem;
+}
+
+/* Line effects */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+.icon-button:hover span {
+	width: 2rem;
+	height: 2rem;
+	margin: -15px;
+}
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+.linkedin span {
+	background-color: #007ABB;
+}
+.instagram span {
+	background-color: #5080A8;
+}
+.gmail span {
+	background-color: #CB2028;
+}
+.youtube span {
+	background-color: #DC482E;
+}
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 2rem;
+	left: 0;
+	line-height: 2rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 2rem;
+	z-index: 10;
+}
+.icon-button .fa-twitter {
+	color: #4099ff;
+	border: 1px solid #4099ff;
+}
+.icon-button .fa-facebook {
+	color: #3B5998;
+	border: 1px solid #3B5998;
+}
+.icon-button .fa-envelope-o {
+	color: #db5a3c;
+	border: 1px solid #db5a3c;
+}
+.icon-button .icon-linkedin {
+	color: #007ABB;
+	border: 1px solid #007ABB;
+}
+.icon-button .fa-instagram {
+	color: #5080A8;
+	border: 1px solid #5080A8;
+}
+.icon-button .fa-envelope-o{
+	color: #CB2028;	
+	border: 1px solid #CB2028;
+}
+.icon-button .fa-youtube-play{
+	color: #DC482E;	
+	border: 1px solid #DC482E;	
+}
+.icon-button .fa-google-plus{
+	color: #db5a3c;
+	border: 1px solid #db5a3c;		
+}
+.icon-button .fa-linkedin{
+	color: #007ABB;	
+	border: 1px solid #007ABB;	
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-envelope-o,
+.icon-button:hover .icon-linkedin,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-envelope-o,
+.icon-button:hover .fa-youtube-play,
+.icon-button:hover .fa-google-plus,
+.icon-button:hover .fa-linkedin {
+	color: white;
+}

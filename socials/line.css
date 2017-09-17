@@ -110,15 +110,12 @@
 	border: 1px solid #007ABB;	
 }
 
-.icon-button:hover .icon-twitter,
 .icon-button:hover .fa-facebook,
-.icon-button:hover .fa-envelope-o,
 .icon-button:hover .icon-linkedin,
 .icon-button:hover .fa-instagram,
 .icon-button:hover .fa-twitter,
 .icon-button:hover .fa-envelope-o,
 .icon-button:hover .fa-youtube-play,
-.icon-button:hover .fa-google-plus,
-.icon-button:hover .fa-linkedin {
+.icon-button:hover .fa-google-plus {
 	color: white;
 }

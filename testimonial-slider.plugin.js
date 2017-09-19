@@ -24,7 +24,7 @@ function testimonialSlider(id, slideSpeed, autoPlay) {
 		$("#" + id).owlCarousel({
 			navigation: false,
 			slideSpeed: slideSpeed,
-			paginationSpeed: 800,
+			paginationSpeed: autoPlay,
 			singleItem: true,
 			autoPlay: autoPlay,
 			autoplayTimeout: slideSpeed,

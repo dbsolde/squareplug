@@ -1,4 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+/* Wrapper */
 .icon-button {
 	background-color: white;
 	cursor: pointer;
@@ -14,9 +15,46 @@
 	        user-select: none;
 	width: 2rem;
 }
-.facebook, .twitter, .instagram, .gmail, .youtube, .google-plus, .linkedin {
-	background-color: #282828;
+
+/* Line effects */
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
 }
+.icon-button:hover span {
+	width: 2rem;
+	height: 2rem;
+	margin: -1rem;
+}
+/* color on hover */
+.facebook span, 
+.google-plus span, 
+.linkedin span, 
+.instagram span, 
+.gmail span, 
+.youtube span, 
+.twitter span { background-color: #737272; }
+
+/* default color */
+.twitter,
+.facebook,
+.google-plus,
+.linkedin,
+.instagram,
+.gmail,
+.youtube { background-color: #282828; }
+
+/* Icons */
 .icon-button i {
 	background: none;
 	color: white;
@@ -25,6 +63,31 @@
 	line-height: 2rem;
 	position: absolute;
 	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
 	width: 2rem;
 	z-index: 10;
+}
+
+.icon-button .fa-twitter,
+.icon-button .fa-facebook,
+.icon-button .fa-instagram,
+.icon-button .fa-envelope-o,
+.icon-button .fa-youtube-play,
+.icon-button .fa-google-plus,
+.icon-button .fa-linkedin{ color: white; }
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .fa-facebook,
+.icon-button:hover .fa-envelope-o,
+.icon-button:hover .icon-linkedin,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-twitter,
+.icon-button:hover .fa-envelope-o,
+.icon-button:hover .fa-youtube-play,
+.icon-button:hover .fa-google-plus,
+.icon-button:hover .fa-linkedin {
+	color: white;
 }

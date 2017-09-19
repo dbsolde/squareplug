@@ -19,6 +19,7 @@ function initSlider(a,b,c){
 }
 
 function testimonialSlider(id, slideSpeed, autoPlay) {
+	console.log(slideSpeed);
 	$.getScript('https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js', function () {
 		$("#" + id).owlCarousel({
 			navigation: false,

@@ -25,7 +25,8 @@ function testimonialSlider(id, slideSpeed, autoPlay) {
 			slideSpeed: slideSpeed,
 			paginationSpeed: 800,
 			singleItem: true,
-			autoPlay: autoPlay
+			autoPlay: autoPlay,
+			autoplayTimeout: slideSpeed
 		});
 	});
 }

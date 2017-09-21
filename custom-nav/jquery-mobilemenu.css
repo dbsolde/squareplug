@@ -16,13 +16,13 @@ body.mmactive {
 }
 .sm_menu_outer {
   height: calc(100vh - 60px);
-  /*overflow-y: scroll;*/
-  overflow-x: hidden;
+  /*overflow-y: scroll;
+  overflow-x: hidden;*/
   position: fixed;
   right: 0;
   bottom: 0;
   z-index: -9;
-  width: 100%;
+  width: 106%;
   opacity: 0;
   /*background-color: #000000;*/
   -webkit-transition: opacity 0.2s;

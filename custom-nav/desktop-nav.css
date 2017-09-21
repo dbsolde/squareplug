@@ -1,0 +1,225 @@
+
+.menu {
+    width: 100%;
+}
+
+.menu a.logo {
+    display: inline-block;
+    padding: 13px 20px;
+    width: 73px;
+
+    float: left;
+}
+
+.menu > ul {
+  margin: 0 auto;
+  /*width: 80%;*/
+  list-style: none;
+  padding: 0;
+  position: relative;
+  /* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
+  box-sizing: border-box;
+      clear: right;
+}
+.menu > ul:before,
+.menu > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul:after {
+  clear: both;
+}
+.menu > ul > li {
+  float: left;
+  background: #262626;
+  padding: 0;
+  margin: 0;
+}
+.menu > ul > li a {
+    color: #ffffff;
+  text-decoration: none;
+  padding: 25px 40px;
+  display: block;
+  /*font-size: 20px;*/
+}
+.menu > ul > li a: hover{
+    border-bottom: 1px solid #fff;
+}
+
+.menu > ul > li > ul {
+  display: none;
+  width: 100%;
+  background: #2b2b2b;
+  padding: 20px;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul:before,
+.menu > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li {
+  margin: 0;
+  padding-bottom: 30px;
+  list-style: none;
+  width: 15%;
+  background: none;
+  float: left;
+}
+.menu > ul > li > ul > li.with-image-menu{
+    width: 55%;
+}
+.menu > ul > li > ul > li.with-image-menu dl{
+
+}
+.menu > ul > li > ul > li.with-image-menu dl dd{
+    height: auto;
+    float: left;
+    margin: 10px 2% 0 0;
+    width: 32%;
+    width: calc(94% / 3);
+}
+.menu > ul > li > ul > li.with-image-menu dl dd img{
+    width: 100%;
+}
+.menu > ul > li > ul > li a {
+  color: #777;
+  padding: .2em 0;
+  display: block;
+}
+.menu > ul > li > ul > li a:hover{
+    color:#fafafa;
+}
+.menu > ul > li > ul > li > ul {
+  display: block;
+  padding: 0;
+  margin: 10px 0 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+.menu > ul > li > ul > li > ul:before,
+.menu > ul > li > ul > li > ul:after {
+  content: "";
+  display: table;
+}
+.menu > ul > li > ul > li > ul:after {
+  clear: both;
+}
+.menu > ul > li > ul > li > ul > li {
+  float: left;
+  width: 100%;
+  padding: 5px 0;
+  margin: 0;
+  /*font-size: .8em;*/
+}
+.menu > ul > li > ul > li > ul > li a {
+  border: 0;    
+  font-size: 14px;
+}
+.menu > ul > li > ul.normal-sub {
+  width: 300px;
+  left: auto;
+  padding: 10px 20px;
+}
+.menu > ul > li > ul.normal-sub > li {
+  width: 100%;
+}
+.menu > ul > li > ul.normal-sub > li a {
+  border: 0;
+  padding: 1em 0;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––
+Mobile style's
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 959px) {
+  .menu-container {
+    width: 100%;
+  }
+  .menu-container .menu{
+    display:inline-block;
+   }
+  .menu-mobile {
+    display: block;    
+    float: right;    
+    padding: 20px 20px 0;
+  }
+  .menu-dropdown-icon:before {
+    display: block;
+  }
+  .menu > ul {
+    display: none;
+    width:100%;
+  }
+  .menu > ul > li {
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .menu > ul > li a {
+    padding: 1.5em;
+    width: 100%;
+    display: block;
+  }
+  .menu > ul > li > ul {
+    position: relative;    
+    padding: 0 40px;
+  }
+  .menu > ul > li > ul > li.with-image-menu,
+  .menu > ul > li > ul.normal-sub {
+    width: 100%;
+  }
+  .menu > ul > li > ul > li {
+    float: none;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .menu > ul > li > ul > li:first-child {
+    margin-top: 20px;
+  }
+  .menu > ul > li > ul > li > ul {
+    position: relative;
+    display: none; /*sub nav on mobile */
+  }
+  .menu > ul > li > ul > li > ul > li {
+    float: none;
+  }
+  .menu > ul > li > ul > li > ul > li.image-menu {
+    float: left;
+  }
+  .menu .show-on-mobile {
+    display: block;
+  }
+  .menu > ul > li > ul > li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+  }
+  .menu > ul > li > ul > li a:after{
+    content: " > ";
+    float: right;
+    color: #ffffff;
+  }
+  .image-menu{
+    width: 30% !important;
+  }
+}
+
+.second-row{
+  clear: both;
+}
+
+.image-menu{
+    width: 20% !important;
+    margin-right: 0 10px !important;
+    float: left;
+}
+img {
+  width: 100%;
+}

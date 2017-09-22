@@ -71,12 +71,12 @@
 .menu > ul > li a {
     color: #ffffff;
   text-decoration: none;
-  padding: 30px 15px 5px 15px;
+  padding: 30px 20px;
   display: block;
   font-size: 20px;
 }
 .menu > ul > li.hover-this-menu:hover{
-    border-bottom: 1px solid #fff;
+    /*border-bottom: 1px solid #fff;*/
 }
 .menu > ul > li:hover {
   /*background: #f0f0f0;*/
@@ -90,7 +90,7 @@
   position: absolute;
   z-index: 99;
   left: 0;
-  margin: 20px 0 0 0;
+  margin: 0;
   list-style: none;
   box-sizing: border-box;
 }
@@ -165,7 +165,7 @@
   padding: 1em 0;
 }
 .menu > ul > li:hover {
-  border-bottom: 1px solid #ffffff;
+  /*border-bottom: 1px solid #ffffff;*/
 }
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
@@ -255,6 +255,9 @@ Mobile style's
     height: 40px;
     width: 40px;
   }
+  .menu > ul > li.hover-this-menu:hover{
+    border-bottom: none;
+  }
 }
 
 .second-row{
@@ -268,4 +271,60 @@ Mobile style's
 }
 img {
   width: 100%;
+}
+
+/* cart style */
+.Header .Cart {
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    font-family: futura-pt;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: .01em;
+    text-transform: none;
+}
+.tweak-header-cart-style-cart .Header .Cart .Cart-inner {
+    padding-top: .8em;
+    padding-bottom: .5em;
+}
+.tweak-header-cart-style-cart .Header .Cart .Cart-inner {
+    display: block;
+    position: relative;
+}
+.tweak-header-cart-style-cart .Header .Cart {
+    position: relative;
+    white-space: nowrap;
+    line-height: 1em;
+    fill: #fff;
+    stroke: #fff;
+}
+.tweak-header-cart-style-cart .Header .Cart .Cart-label {
+    display: none;
+}
+.tweak-header-cart-style-cart .Header .Cart .Icon--cart, .tweak-header-cart-style-cart .Header .Cart .Icon--bag, .tweak-header-cart-style-cart .Header .Cart .Icon--cart-alt, .tweak-header-cart-style-cart .Header .Cart .Icon--bag-alt {
+    display: none;
+}
+.tweak-icon-weight-medium .Icon--bag, .tweak-icon-weight-medium .Icon--bag-alt, .tweak-icon-weight-medium .Icon--cart, .tweak-icon-weight-medium .Icon--cart-alt, .tweak-icon-weight-medium .Icon--dots-horizontal, .tweak-icon-weight-medium .Icon--dots-vertical, .tweak-icon-weight-medium .Icon--hamburger, .tweak-icon-weight-medium .Icon--hotdog, .tweak-icon-weight-medium .Icon--plus, .tweak-icon-weight-medium .Icon--squares-horizontal, .tweak-icon-weight-medium .Icon--squares-vertical, .tweak-icon-weight-medium .Icon--user-accounts {
+    stroke-width: 3;
+}
+.tweak-header-cart-style-cart .Header .Cart .Icon--cart {
+    display: inline-block;
+}
+.tweak-header-cart-style-cart .Header .Cart .sqs-cart-quantity {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 1em;
+    margin-top: -.5em;
+    margin-left: -1em;
+    border-radius: 1em;
+    padding: .5em;
+    background-color: #f2f2f2;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+    color: #2e2e2e;
+    text-align: center;
+    line-height: 1em;
 }

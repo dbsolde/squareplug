@@ -334,10 +334,10 @@ img {
     line-height: 1em;
 }
 .menu-socials:first-child{
-    width:34%;
+    width:34% !important;
 }
 .menu-socials{
     text-align:center;
-    width: 33%;
-    float:left;
+    width: 33% !important;
+    float:left !important;
 }

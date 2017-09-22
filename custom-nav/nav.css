@@ -260,7 +260,7 @@ Mobile style's
     border-bottom: none;
   }
   .menu > ul > li > a.Cart{
-    /*display: none;*/
+    display: none;
   }
 }
 

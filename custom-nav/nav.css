@@ -243,6 +243,7 @@ Mobile style's
   }
   .menu .show-on-mobile {
     display: block;
+    padding-top:20px;
   }
   .menu > ul > li > ul > li {
     border-bottom: 1px solid #ccc;

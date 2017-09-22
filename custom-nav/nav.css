@@ -333,3 +333,11 @@ img {
     text-align: center;
     line-height: 1em;
 }
+.menu-socials:first-child{
+    width:34%;
+}
+.menu-socials{
+    text-align:center;
+    width: 33%;
+    float:left;
+}

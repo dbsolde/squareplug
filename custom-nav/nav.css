@@ -341,3 +341,6 @@ img {
     width: 33% !important;
     float:left !important;
 }
+.Header--top{
+    display:block !important;
+}

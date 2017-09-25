@@ -25,7 +25,7 @@
 .menu-mobile:after {
   content: "\f394";
   font-family: "Ionicons";
-  font-size: 2.5rem;
+  font-size: 30px;
   padding: 0;
   float: right;
   position: relative;
@@ -34,20 +34,20 @@
           transform: translateY(-25%);
   color: #ffffff;
 }
-.menu-dropdown-icon:before {
-  content: "\f489";
+.menu-mobile.active:after {
+  content: "\f2d7";
   font-family: "Ionicons";
-  display: none;
-  cursor: pointer;
+  font-size: 30px;
+  padding: 0;
   float: right;
-  padding: 1em 1.5em;
-  background: #fff;
-  color: #333;
-  margin-right: 20px;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-25%);
+          transform: translateY(-25%);
+  color: #ffffff;
 }
 .menu > ul {
   margin: 0 auto;
-  /*width: 80%;*/
   list-style: none;
   padding: 0;
   position: relative;
@@ -70,11 +70,10 @@
   margin: 0;
 }
 .menu > ul > li a {
-    color: #ffffff;
+  color: #ffffff;
   text-decoration: none;
   padding: 30px 20px;
   display: block;
-  font-size: 20px;
 }
 .menu > ul > li.hover-this-menu:hover{
     /*border-bottom: 1px solid #fff;*/
@@ -182,10 +181,33 @@ Mobile style's
   .menu-mobile {
     display: block;    
     float: right;    
-    padding: 20px 20px 0;
+    padding: 30px 23px 0;
   }
   .menu-dropdown-icon:before {
+    content: "\f3d0";
+    font-family: "Ionicons";
+    display: none;
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
     display: block;
+    float: right;
+    padding: 15px 27px 0;
+  }
+  .menu-dropdown-icon.active:before {
+      content: "\f3d8";
+      font-family: "Ionicons";
+      display: none;
+      cursor: pointer;
+      float: right;
+      color: #fff;
+      font-size: 20px;
+      position: relative;
+      display: block;
+      float: right;
+      padding: 15px 27px 0;
   }
   .menu > ul {
     display: none;
@@ -195,15 +217,16 @@ Mobile style's
     width: 100%;
     float: none;
     display: block;
+    border-bottom: 1px solid #434343;
+    background: #333333;
   }
   .menu > ul > li a {
-    padding: 1.5em;
-    /*width: 100%;*/
+    padding: 20px;
     display: block;
   }
   .menu > ul > li > ul {
     position: relative;    
-    padding: 0 40px;
+    padding: 0 30px;
   }
   .menu > ul > li > ul > li.with-image-menu,
   .menu > ul > li > ul.normal-sub {
@@ -228,9 +251,6 @@ Mobile style's
     width: 100%;
     margin-top: 15px;
   }
-  .menu > ul > li > ul > li:first-child {
-    margin-top: 20px;
-  }
   .menu > ul > li > ul > li > ul {
     position: relative;
     display: none; /*sub nav on mobile */
@@ -243,23 +263,28 @@ Mobile style's
   }
   .menu .show-on-mobile {
     display: block;
-    padding-top:20px;
   }
   .menu > ul > li > ul > li {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #434343;
     padding-bottom: 15px;
   }
   .menu > ul > li > ul > li a:after{
-    content: " > ";
+    content: "\f3d3";
     float: right;
+    color: #ffffff;
+    font-family: "Ionicons";
+    font-size: 20px;
+    padding: 0;
+    float: right;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-25%);
+            transform: translateY(-25%);
     color: #ffffff;
   }
   .menu  a.logo img {
     height: 40px;
     width: 40px;
-  }
-  .menu > ul > li.hover-this-menu:hover{
-    border-bottom: none;
   }
   .menu > ul > li > a.Cart{
     display: none;

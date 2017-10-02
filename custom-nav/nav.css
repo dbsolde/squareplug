@@ -176,6 +176,9 @@ ul.reordertest {
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (max-width: 959px) {
+  .tweak-header-search-style-rectangle .Header-search{
+      display: none !important;
+  }
   ul.reordertest li.with-image-menu {
     -webkit-box-ordinal-group: 2;   /* OLD - iOS 6-, Safari 3.1-6 */
         -moz-box-ordinal-group: 2;      /* OLD - Firefox 19- */

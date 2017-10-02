@@ -1,4 +1,4 @@
-
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css');
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://cdn.rawgit.com/dbsolde/squareplug/d1d785f8/animate.css');
 
@@ -6,6 +6,17 @@
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0em;
+    font-family: freight-big-pro;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 19px;
+    letter-spacing: .02em;
+    line-height: 1.6em;
+    text-transform: none;
 }
 
 .timeline:before {

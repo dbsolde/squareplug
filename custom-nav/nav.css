@@ -5,7 +5,7 @@
 }
 .menu-container {
   margin: 0 auto;
-  background: #262626;
+  background: rgba(26,26,26,.75);
 }
 .menu a.logo {
     display: inline-block;

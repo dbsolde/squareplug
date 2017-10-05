@@ -1,0 +1,187 @@
+<!-- Mega Menu Starts here -->
+<style type="text/css">
+  .Header-inner--top{ display: none !important; }
+  .tweak-mobile-bar-top-fixed .Mobile-bar--top { display: none !important; }
+  @media only screen and (max-width: 959px) {
+  	body{ margin-top: 72px !important; }
+  }
+</style>
+
+<link rel="stylesheet" href="https://cdn.rawgit.com/dbsolde/squareplug/3dd53030/custom-nav/nav.css">
+<header id="mega-menu" class="Header Header--top" id="yui_3_17_2_1_1506094344597_1572">
+  <div class="menu-container">
+  <div class="menu">
+    <a href="https://tinylifesupply.ca/" class="logo"><img src="//static1.squarespace.com/static/588a9065d1758e264108f0e1/t/5920c42ee4fcb51ea8c00c69/1506113944095/?format=1500w"></a>
+    <ul class="clearfix mega-menu">
+      <li class="hover-this-menu has-subnav"><a href="#">SHOP</a>
+        <ul class="reordertest">
+            <li>
+              <a href="https://tinylifesupply.com/energy">ENERGY</span></a>
+              <ul>
+                <li><a href="https://tinylifesupply.com/solar">Solar</a></li>
+                <li><a href="https://tinylifesupply.com/wind">Wind</a></li>
+                <li><a href="https://tinylifesupply.com/hydro-electric">Hydro Electric</a></li>
+                <li><a href="https://tinylifesupply.com/generators">Generators</a></li>
+                <li><a href="https://tinylifesupply.ca/energy-storage">Battery Storage</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://tinylifesupply.com/heat">HEAT</a>
+              <ul>
+                <li><a href="https://tinylifesupply.ca/wood-stoves">Wood Stoves</a></li>
+                <li><a href="https://tinylifesupply.ca/propane">Propane</a></li>
+                <li><a href="https://tinylifesupply.ca/electric">Electric</a></li>
+                <li><a href="https://tinylifesupply.ca/flue-kits">Flue Kits</a></li>
+                <li><a href="https://tinylifesupply.ca/heat-accessories">Accessories</a></li>
+              </ul>
+            </li>
+            <li class="before-shop-by-house">
+              <a href="https://tinylifesupply.com/appliances">APPLIANCES</a>
+              <ul>
+                <li><a href="https://tinylifesupply.com/ranges">Range Ovens</a></li>
+                <li><a href="https://tinylifesupply.com/cooktops">Cooktops</a></li>
+                <li><a href="https://tinylifesupply.com/fridges">Fridges</a></li>
+                <li><a href="https://tinylifesupply.com/freezers#">Freezers</a></li>
+                <li><a href="https://tinylifesupply.com/laundry">Laundry</a></li>
+              </ul>
+            </li>
+            <li class="with-image-menu shop-by-house">
+              <a href="#">SHOP BY HOUSE</a>
+              <ul>
+                <li class="image-menu"><a href="#">
+                  <img src="http://www.pgecurrents.com/wp-content/uploads/2012/05/300x200_ggb_fort_point.jpg">
+                  <span>Description</span></a>
+                </li>
+                <li class="image-menu"><a href="#">
+                  <img src="http://www.pgecurrents.com/wp-content/uploads/2012/09/300x200_Lighting-Showcase-Photo-2.jpg">
+                  <span>Description</span></a>
+                </li>
+                <li class="image-menu"><a href="#">
+                  <img src="http://www.pgecurrents.com/wp-content/uploads/2012/05/300x200_ggb_fort_point.jpg">
+                  <span>Description</span></a>
+                </li>
+                <li class="image-menu"><a href="#">
+                  <img src="http://www.pgecurrents.com/wp-content/uploads/2012/09/300x200_Lighting-Showcase-Photo-2.jpg">
+                  <span>Description</span></a>
+                </li>
+                <li class="image-menu"><a href="#">
+                  <img src="http://www.pgecurrents.com/wp-content/uploads/2012/05/300x200_ggb_fort_point.jpg">
+                  <span>Description</span></a>
+                </li>
+                <li class="image-menu"><a href="#">
+                  <img src="http://www.pgecurrents.com/wp-content/uploads/2012/09/300x200_Lighting-Showcase-Photo-2.jpg">
+                  <span>Description</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="second-row">
+              <a href="https://tinylifesupply.com/water">WATER</a>
+              <ul>
+                <li><a href="https://tinylifesupply.com/tanks">Tanks</a></li>
+                <li><a href="https://tinylifesupply.com/pumps">Pumps</a></li>
+                <li><a href="https://tinylifesupply.com/water-heaters">Heaters</a></li>
+                <li><a href="https://tinylifesupply.com/sinks-and-showers">Sinks and Showers</a></li>
+                <li><a href="https://tinylifesupply.com/rainwater">Rainwater</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://tinylifesupply.com/lifestyle ">LIFESTYLE</a>
+              <ul>
+                <li><a href="https://tinylifesupply.com/furniture">Furniture</a></li>
+                <li><a href="https://tinylifesupply.com/smart-storage">Smart Storage</a></li>
+                <li><a href="https://tinylifesupply.com/lighting">Lighting</a></li>
+                <li><a href="https://tinylifesupply.com/electronics">Electronics</a></li>
+                <li><a href="https://tinylifesupply.com/garden">Garden</a></li>
+              </ul>
+            </li>
+            <li class="before-shop-by-room">
+              <a href="https://tinylifesupply.com/construction">CONSTRUCTION</a>
+              <ul>
+                <li><a href="https://tinylifesupply.com/doors">Doors</a></li>
+                <li><a href="https://tinylifesupply.com/windows">Windows</a></li>
+                <li><a href="https://tinylifesupply.com/roofing">Roofing</a></li>
+                <li><a href="https://tinylifesupply.com/trailers">Trailers</a></li>
+                <li><a href="https://tinylifesupply.com/yurt-canvas">Yurt Canvas</a></li>
+              </ul>
+            </li>
+            <li class="shop-by-room">
+              <a href="#">SHOP BY ROOM</a>
+              <ul>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Bathroom</a></li>
+                <li><a href="#">Living Room</a></li>
+                <li><a href="#">Living Room</a></li>
+                <li><a href="#">Exterior</a></li>
+              </ul>
+            </li>
+          </ul>
+      </li>
+      <li class="no-submenu"><a href="https://tinylifesupply.ca/about">ABOUT</a></li>
+      <li class="hover-this-menu media"><a href="#">MEDIA</a>
+        <ul>
+          <li><a href="https://tinylifesupply.ca/blog">Blog</a></li>
+          <li><a href="https://tinylifesupply.ca/tiny-life-designs">Designs</a></li>
+          <li><a href="https://tinylifesupply.ca/renegades">Renegades</a></li>
+          <li class="menu-socials">
+            <a href="https://web.facebook.com/tinylifesupply"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li class="menu-socials">
+            <a href="https://www.instagram.com/tinylifesupply/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li class="menu-socials">
+            <a href="https://twitter.com/TinyLifeSupply"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </li>
+      <li class="no-submenu"><a href="https://tinylifesupply.ca/contact">CONTACT</a></li>
+      <!-- Cart -->
+       <li style="float:right;padding-top:15px;border-bottom: none;">
+        <a href="/cart" class="Cart sqs-custom-cart yui3-widget sqs-template-integrated-shopping-cart sqs-template-integrated-shopping-cart-content" data-nc-element="cart" data-test="template-cart" id="yui_3_17_2_1_1506020761432_1364">
+        <span class="Cart-inner">
+          <span class="Cart-label"></span>
+
+          <svg class="Icon Icon--bag-alt" viewBox="0 0 28 28">
+            <use class="use--odd" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#bag-icon-alt--odd"></use>
+            <use class="use--even" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#bag-icon-alt--even"></use>
+          </svg>
+          <svg class="Icon Icon--bag" viewBox="0 0 34 38">
+            <use class="use--odd" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#bag-icon--odd"></use>
+            <use class="use--even" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#bag-icon--even"></use>
+          </svg>
+          <svg class="Icon Icon--cart-alt" viewBox="0 0 28 28">
+            <use class="use--odd" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#cart-icon-alt--odd"></use>
+            <use class="use--even" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#cart-icon-alt--even"></use>
+          </svg>
+          <svg class="Icon Icon--cart" viewBox="0 0 31 26">
+            <use class="use--odd" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#cart-icon--odd"></use>
+            <use class="use--even" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#cart-icon--even"></use>
+          </svg>
+
+          <span class="sqs-cart-quantity">0</span>
+        </span>
+      </a>
+      </li>
+    <!-- Search -->
+      <li style="float:right;padding-top:20px;border-bottom: none;">
+        <div class="Header-search" data-nc-element="search" id="yui_3_17_2_1_1506020761432_1539">
+              <form class="Header-search-form" action="/search" method="get" id="yui_3_17_2_1_1506020761432_1538">
+                <input class="Header-search-form-input" name="q" type="text" spellcheck="false" value="" autocomplete="off" placeholder="Search" id="yui_3_17_2_1_1506020761432_1537">
+                <button class="Header-search-form-submit" type="submit" data-test="template-search">
+                  <svg class="Icon Icon--search--small" viewBox="0 0 15 15">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#search-icon--small"></use>
+                  </svg>
+                  <svg class="Icon Icon--search" viewBox="0 0 20 20">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/ui-icons.svg#search-icon"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</header>
+<script>
+$(document).ready(function(){$(".menu > ul").before('<a href="#" class="menu-mobile"> </a>');$(".menu > ul > li:has( > ul)").addClass("menu-dropdown-icon");$(".menu > ul > li > ul:not(:has(ul))").addClass("normal-sub");$(".hover-this-menu").hover(function(f){if($(window).width()>943){$(this).children("ul").stop(true,false).fadeToggle(150);f.preventDefault()}});var b=$(".mega-menu"),c=$(".menu-mobile"),a=$(".menu > ul > li"),d=$(".menu > ul > li > ul > li");c.click(function(f){if($(window).width()<=943){f.preventDefault();$(".menu > ul").toggleClass("show-on-mobile");c.toggleClass("active");b.toggleClass("active")}});a.click(function(f){f.preventDefault();$(this).toggleClass("left-slide").next("ul").toggleClass("left-slide");return false});d.click(function(f){f.preventDefault();$(this).toggleClass("level-3-nav").next("ul").toggleClass("level-3-nav");return false});$(".menu > ul > li > ul > li > ul > li > a").click(function(f){f.stopImmediatePropagation();return true});$("a.logo").click(function(f){f.stopImmediatePropagation();return true});$(".menu > ul > li > ul.normal-sub > li > a").click(function(f){f.stopImmediatePropagation();return true});$(".menu > ul > li.no-submenu > a").click(function(f){f.stopImmediatePropagation();return true})});(function(b){var c=b(window);function a(){if(c.width()<943){b(".shop-by-house").insertAfter(".mega-menu li:nth-child(7)")}else{b(".shop-by-house").insertAfter(".before-shop-by-house");b(".menu > ul > li > ul > li > a").click(function(d){d.stopImmediatePropagation();return true});b(".menu > ul > li.no-submenu > a").click(function(d){d.stopImmediatePropagation();return true})}}c.resize(a).trigger("resize")})(jQuery);
+</script>
+<!-- Mega Menu End -->

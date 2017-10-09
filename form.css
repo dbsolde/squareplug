@@ -4,6 +4,7 @@
 }
 .form-wrapper .field-list .field .field-element.focused{
   	transition: all 0.3s ease-out;
+    padding: 15px 0px;
 }
 .form-wrapper .field-list .title{
   	position: absolute;

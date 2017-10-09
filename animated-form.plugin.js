@@ -5,42 +5,4 @@
 	description: Animate form
 */
 
-function animateForm(a) {
-	void 0 === a ? console.error("Slider Tab parameters is undefined.") :
-		(initForm(a), $(window).on("popstate", function (i, t) {
-			$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-				initForm(a), $(this).off("DOMSubtreeModified")
-			})
-		}), $("body").on("click", "a", function () {
-			$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
-				initForm(a), $(this).off("DOMSubtreeModified")
-			})
-		}))
-}
-
-function initForm(a){
-   var input = $(a);
-        $('.form-item.required :input.field-element').prop('required',true);
-    $(input).focusin(function() {
-        var inputId = $(this).attr('id');
-        $(this).addClass('focused');
-        $('label[for="'+inputId+'"]').addClass('focused');
-    });
-  	$(input).focusout(function() {
-        var inputId = $(this).attr('id');
-        $(this).removeClass('focused');
-        $('label[for="'+inputId+'"]').removeClass('focused');
-        checkForInput(this,inputId);
-    });
-}
-
-function checkForInput(element,inputId) { 
-  const $label = $('label[for="'+inputId+'"]');
-  if ($(element).val().length > 0) {
-    $(element).addClass('focused');
-    $label.addClass('focused');
-  } else {
-    $(element).removeClass('focused');
-    $label.removeClass('focused');
-  }
-}
+function animateForm(b){void 0===b?console.error("Slider Tab parameters is undefined."):(initForm(b),$(window).on("popstate",function(c,a){$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified",function(){initForm(b),$(this).off("DOMSubtreeModified")})}),$("body").on("click","a",function(){$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified",function(){initForm(b),$(this).off("DOMSubtreeModified")})}))}function initForm(b){var c=$(b);$(".form-item.required :input.field-element").prop("required",true);$(c).focusin(function(){var a=$(this).attr("id");$(this).addClass("focused");$('label[for="'+a+'"]').addClass("focused")});$(c).focusout(function(){var a=$(this).attr("id");$(this).removeClass("focused");$('label[for="'+a+'"]').removeClass("focused");checkForInput(this,a)})}function checkForInput(c,b){const a=$('label[for="'+b+'"]');if($(c).val().length>0){$(c).addClass("focused");a.addClass("focused")}else{$(c).removeClass("focused");a.removeClass("focused")}};

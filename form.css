@@ -15,5 +15,6 @@
 }
 .form-wrapper .field-list .title.focused{
   top: -10px !important;
+  transition: all 0.3s ease-out;
   transform: translateY(-2px);
 }

@@ -1,0 +1,19 @@
+.form-wrapper .field-list .field .field-element{
+  padding: 15px 0px;
+  transition: all 0.3s ease-in;
+}
+.form-wrapper .field-list .field .field-element.focused{
+  	transition: all 0.3s ease-out;
+}
+.form-wrapper .field-list .title{
+  	position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 0.3s ease-in;
+    transform: translateY(20px);
+    font-size: 19px;
+}
+.form-wrapper .field-list .title.focused{
+  top: -10px !important;
+  transform: translateY(-2px);
+}

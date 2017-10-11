@@ -12,10 +12,59 @@
     left: 0px;
     transition: all 0.3s ease-in;
     transform: translateY(20px);
-    font-size: 19px;
+    
 }
 .form-wrapper .field-list .title.focused{
   top: -10px !important;
   transition: all 0.3s ease-out;
   transform: translateY(-2px);
+}
+.bottom-label { 
+  position: absolute;
+	top: 30px;
+	transition: all 0.3s ease-in;
+}
+.bottom-label.animate {
+  top: -10px;
+	transition: all 0.3s ease-out;
+}
+.form-wrapper .field-list .fields.name {
+	margin: 0 0 15px -2%;
+	position: relative;
+}
+.form-wrapper .field-list .name div.title {
+	display: none;
+}
+/* all items, just to be safe */
+.form-wrapper .field-list .fields {
+	position: relative;
+}
+.form-wrapper .field-list .fields.name .field {
+	position: relative;
+}
+
+/* Phone */
+.form-wrapper .field-list .fields.phone {
+	margin: 0 0 15px -2%;
+	position: relative;
+}
+
+.form-wrapper .field-list .phone div.title {
+	position: absolute;
+	top: -33px;
+	left: 0px;
+	transition: all 0.3s ease-in;
+	transform: translateY(20px);
+	font-size: 19px;
+}
+
+.bottom-label-phone {
+	position: absolute;
+	top: 30px;
+	transition: all 0.3s ease-in;
+}
+
+.bottom-label-phone.animate {
+	top: 60px;
+	transition: all 0.3s ease-out;
 }

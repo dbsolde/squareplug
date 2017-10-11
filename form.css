@@ -21,7 +21,7 @@
 }
 .bottom-label { 
   position: absolute;
-	top: 30px;
+	top: 25px;
 	transition: all 0.3s ease-in;
 }
 .bottom-label.animate {

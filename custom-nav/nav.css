@@ -58,7 +58,6 @@
 	margin: 0 auto;
 	list-style: none;
 	padding: 10px 0 0 0;
-	position: relative;
 	/* IF .menu position=relative -> ul = container width, ELSE ul = 100% width */
 	box-sizing: border-box;
 	clear: right;

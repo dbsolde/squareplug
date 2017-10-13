@@ -1,4 +1,4 @@
-jQuery(function(){	
+(function() {
 
     var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
 
@@ -7,8 +7,8 @@ jQuery(function(){
     addListeners();
 
     function initHeader() {
-        width = window.innerWidth ? window.innerWidth : 0;
-        height = window.innerHeight ? window.innerHeight : 0;
+        width = window.innerWidth;
+        height = window.innerHeight;
         target = {x: 0, y: height};
 
         largeHeader = document.getElementById('large-header');
@@ -76,7 +76,7 @@ jQuery(function(){
             _this.velocity = Math.random();
         }
 
-        draw = function() {
+        this.draw = function() {
             if(_this.alpha <= 0) {
                 init();
             }
@@ -89,4 +89,4 @@ jQuery(function(){
         };
     }
 
-});
+})();

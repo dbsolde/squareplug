@@ -7,12 +7,12 @@
     addListeners();
 
     function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = window.innerWidth ? window.innerWidth : 0;
+        height = window.innerHeight ? window.innerHeight : 0;
         target = {x: 0, y: height};
 
         largeHeader = document.getElementById('large-header');
-        largeHeader.height = height+'px';
+        largeHeader.style.heightt = height+'px';
 
         canvas = document.getElementById('demo-canvas');
         canvas.width = width;
@@ -42,7 +42,7 @@
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
-        largeHeader.height = height+'px';
+        largeHeader.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;
     }

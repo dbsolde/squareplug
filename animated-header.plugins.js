@@ -76,7 +76,7 @@
             _this.velocity = Math.random();
         }
 
-        this.draw = function() {
+        _this.draw = function() {
             if(_this.alpha <= 0) {
                 init();
             }

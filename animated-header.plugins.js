@@ -7,8 +7,8 @@
     addListeners();
 
     function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = window.innerWidth ? window.innerWidth : 0;
+        height = self.innerHeight ? self.innerHeight : 0;
         target = {x: 0, y: height};
 
         largeHeader = document.getElementById('large-header');

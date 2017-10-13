@@ -1,4 +1,4 @@
-(function() {
+jQuery(function(){	
 
     var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
 
@@ -12,7 +12,7 @@
         target = {x: 0, y: height};
 
         largeHeader = document.getElementById('large-header');
-        largeHeader.height = height+'px';
+        largeHeader.style.height = height+'px';
 
         canvas = document.getElementById('demo-canvas');
         canvas.width = width;
@@ -42,7 +42,7 @@
     function resize() {
         width = window.innerWidth;
         height = window.innerHeight;
-        largeHeader.height = height+'px';
+        largeHeader.style.height = height+'px';
         canvas.width = width;
         canvas.height = height;
     }

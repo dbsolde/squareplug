@@ -76,7 +76,7 @@ jQuery(function(){
             _this.velocity = Math.random();
         }
 
-        _this.draw = function() {
+        draw = function() {
             if(_this.alpha <= 0) {
                 init();
             }
@@ -89,4 +89,4 @@ jQuery(function(){
         };
     }
 
-})();
+});

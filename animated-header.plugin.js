@@ -7,7 +7,7 @@
         width = window.innerWidth;
         height = window.innerHeight;
         target = {x: 0, y: height};
-        largeHeader = document.getElementById('large-header');
+        largeHeader = document.getElementById('animated-header');
         largeHeader.style.height = height+'px';
         canvas = document.getElementById('canvas');
         canvas.width = width;

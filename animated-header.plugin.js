@@ -3,9 +3,6 @@
 	window.requestAnimationFrame = requestAnimationFrame;
 })();
     var width, height, largeHeader, canvas, ctx, circles, target, animateHeader = true;
-    function colour(a){
-    	return a;
-    }
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
@@ -70,7 +67,7 @@
             ctx.beginPath();
             ctx.arc(_this.pos.x, _this.pos.y, _this.scale*10, 0, 2 * Math.PI, false);
           
-            ctx.fillStyle = 'rgba('+colour()+','+ _this.alpha+')';
+            ctx.fillStyle = 'rgba('+colour+','+ _this.alpha+')';
             ctx.fill();
         };
     }

@@ -36,3 +36,82 @@
 	justify-content: center;
 	min-height: 75px;
 }
+.pricing-currency {
+  	display: inline-block;
+    	vertical-align: middle;
+}
+ul.pricing-feature {
+	list-style: none;
+	padding: 0px;
+	margin: 0;
+}
+.pricing-footer {
+	padding: 40px 15px 15px 15px;
+	border-radius: 0 0 5px 5px;
+}
+
+.triangle::before,
+.triangle::after {
+	position: absolute;
+	z-index: -1;
+	content: '';
+	display: block;
+	border: 5px solid #514E4E;
+}
+
+.triangle span {
+	position: absolute;
+	display: block;
+	padding: 15px 0;
+	color: #ffffff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.ribbon-top-right {
+	top: 0px;
+	right: 0px;
+}
+
+.ribbon-top-right::before,
+.ribbon-top-right::after {
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+.ribbon-top-right::before {
+	top: -50px;
+	left: -50px;
+}
+
+.ribbon-top-right::after {
+	bottom: -50px;
+	right: -50px;
+}
+
+.ribbon-top-right span {
+	left: -25px;
+	top: -35px;
+	transform: rotate(45deg);
+}
+.triangle {
+	border-width: 50px;
+	border-style: solid;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+}
+
+@media only screen and (max-width: 1294px) {
+	.pricing-item.active {
+		webkit-transform: none;
+		transform: none;
+		margin: 7px !important;
+	}
+	.pricing-item.active .pricing-footer {
+		padding: 15px;
+	}
+}

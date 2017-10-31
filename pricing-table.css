@@ -34,6 +34,9 @@
     	transition: background .3s linear 0s;
     	-moz-transition: background .3s linear 0s;
     	-webkit-transition: background .3s linear 0s;
+	
+	-webkit-box-shadow: 0 0 2px #000;
+        box-shadow: 0 0 2px #000;
 }
 .heading h2 {
   margin: 15px;

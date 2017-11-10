@@ -295,7 +295,7 @@ Mobile style's
 	}
 	.menu>ul>li>ul>li.level-3-nav>ul>li.image-menu {
 		float: left !important;
-		width: 33% !important;
+		width: 32% !important;
 	}
 	.menu>ul>li>ul>li.level-3-nav>ul>li.image-menu:before {
 		content: "";

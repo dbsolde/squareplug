@@ -1,5 +1,4 @@
 function initShuffle() {
-	void 0 === a ? console.error("Shuffle parameters is undefined.") :
 		(chafflefnc(), $(window).on("popstate", function (i, t) {
 			$("body div:last-child div:nth-child(3)").bind("DOMSubtreeModified", function () {
 				chafflefnc(), $(this).off("DOMSubtreeModified")

@@ -295,7 +295,8 @@ Mobile style's
 	}
 	.menu>ul>li>ul>li.level-3-nav>ul>li.image-menu {
 		float: left !important;
-		width: 32% !important;
+		width: 44% !important;
+		padding: 0 !important;
 	}
 	.menu>ul>li>ul>li.level-3-nav>ul>li.image-menu:before {
 		content: "";

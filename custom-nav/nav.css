@@ -454,10 +454,14 @@ Mobile style's
 	.menu>ul>li>ul>li>ul>li.image-menu {
 		float: left;
 	}
-	.menu .show-on-mobile.active {
+	.menu .mega-menu.show-on-mobile.active {
 		display: block;
 	}
+	.menu .mega-menu {
+		display: none;
+	}
 	.menu .show-on-mobile {
+		display: block;
 		-webkit-animation: expand .3s;
 		/* Safari, Chrome and Opera > 12.1 */
 		-moz-animation: expand .3s;

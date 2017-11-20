@@ -23,8 +23,8 @@ function testimonialSlider(id, slideSpeed, autoPlay) {
 	$.getScript('https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js', function () {
 		$("#" + id).owlCarousel({
 			navigation: false,
-			slideSpeed: slideSpeed,
-			paginationSpeed: 1000,
+			slideSpeed: 12500,
+			paginationSpeed: 8000,
 			singleItem: true,
 			autoPlay: autoPlay,
 			autoplayTimeout: slideSpeed,

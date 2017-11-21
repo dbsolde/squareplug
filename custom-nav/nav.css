@@ -215,20 +215,6 @@ Mobile style's
 		width: fadein;
 		/*height: 100%;*/
 		overflow: auto;
-
-	}
-	.menu>ul>li.left-slide>ul {
-		display: block !important;
-	}
-	.menu>ul>li>ul>li.level-3-nav {
-		z-index: 999;
-		position: fixed;
-		left: 0px;
-		top: 0px;
-		width: fadein;
-		height: 100%;
-		overflow: auto;
-		background: #2b2b2b;
 		/*CSS animation applied : Slide from Right*/
 		-webkit-transition-property: background, width;
 		-moz-transition-property: background, width;
@@ -247,6 +233,20 @@ Mobile style's
 		-o-animation: fadein .3s;
 		/* Opera < 12.1 */
 		animation: fadein .3s;
+	}
+	.menu>ul>li.left-slide>ul {
+		display: block !important;
+	}
+	.menu>ul>li>ul>li.level-3-nav {
+		z-index: 999;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		width: fadein;
+		height: 100%;
+		overflow: auto;
+		background: #2b2b2b;
+		
 	}
 	.menu>ul>li>ul>li.level-3-nav>ul {
 		display: block !important;

@@ -1,3 +1,4 @@
+$.getScript('https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js', function() {
 var Countdown = {
 
   $el: $('.countdown'),
@@ -123,3 +124,4 @@ var Countdown = {
 };
 
 Countdown.init();
+});
